@@ -1,7 +1,2 @@
-{{page-title "BlackTechStartups"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<Header @title="Black Tech Startups" @onInsert={{fn this.initialize}} @onToggleTheme={{fn this.toggleTheme}} />
 {{outlet}}

@@ -1,0 +1,43 @@
+body, html {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    text-size-adjust: none;
+    cursor: default;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-rendering: optimizeLegibility;
+    user-select: none;
+}
+
+body {
+    @apply bg-gray-300;
+}
+
+body.dark {
+    @apply bg-gray-800;
+}
+
+.page-header {
+    @apply relative border-b border-gray-300;
+}
+
+.logo {
+    @apply font-semibold text-lg text-green-500;
+}
+
+.main-nav a {
+    @apply text-sm flex items-center justify-center rounded-md px-5 py-1 bg-opacity-50 border border-transparent text-white;
+}
+
+.main-nav a:hover {
+    @apply text-green-500 border-green-500;
+}
+
+.dark .main-nav a {
+    @apply text-gray-50;
+}
